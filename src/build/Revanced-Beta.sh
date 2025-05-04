@@ -115,10 +115,11 @@ revanced_dl(){
 7() {
 	revanced_dl
 	# Patch Lightroom:
-	#get_patches_key "lightroom"
- 	#version="9.2.0"
-	#get_apk "com.adobe.lrmobile" "lightroom-beta" "lightroom" "adobe/lightroom/lightroom"
-	#patch "lightroom-beta" "revanced"
+	get_patches_key "lightroom"
+ 	url="https://adobe-lightroom-mobile.en.uptodown.com/android/download/1033600808" #Use uptodown because apkmirror always ask pass Cloudflare on this app
+	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"
+	req "$url" "lightroom-beta.apk"
+	patch "lightroom-beta" "revanced"
 	# Patch RAR:
 	get_patches_key "rar"
 	get_apk "com.rarlab.rar" "rar-beta" "rar" "rarlab-published-by-win-rar-gmbh/rar/rar" "Bundle"
