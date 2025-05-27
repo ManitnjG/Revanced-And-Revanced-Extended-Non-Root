@@ -23,4 +23,5 @@ patch "telegram-web-version" "revanced-experiments"
 # Patch Instagram:
 get_patches_key "instagram-revanced-experiments"
 get_apk "com.instagram.android" "instagram-arm64-v8a" "instagram-instagram" "instagram/instagram-instagram/instagram-instagram" "arm64-v8a" "nodpi"
+version="383.0.0.0.47"
 patch "instagram-arm64-v8a" "revanced-experiments"
