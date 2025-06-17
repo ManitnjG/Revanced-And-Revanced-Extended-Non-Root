@@ -10,5 +10,5 @@ dl_gh "revanced-cli" "inotia00" "latest"
 get_patches_key "Spotjfy-anddea"
 j="i"
 version="9.0.52.505" #https://github.com/ReVanced/revanced-patches/issues/4958#issuecomment-2883387940
-get_uptodown "com.spot"${j}"fy.music" "spotjfy-arm64-v8a" "spotify"${j}"en.uptodown.com/android/download"
+curl -L "$(curl -s https://spotify.en.uptodown.com/android/download | grep -oP 'https://[^"]+\.apk' | head -n 1)" -o spotify.apk
 patch "spotjfy-arm64-v8a" "anddea"
