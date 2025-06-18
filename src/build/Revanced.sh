@@ -78,7 +78,8 @@ revanced_dl(){
 	# Patch Instagram:
 	# Arm64-v8a
 	get_patches_key "instagram"
-	get_apk "com.instagram.android" "instagram-arm64-v8a" "instagram-instagram" "instagram/instagram-instagram/instagram" "arm64-v8a" "640dpi"
+	version="384.0.0.46.83"
+        get_apk "com.instagram.android" "instagram-arm64-v8a" "instagram-instagram" "instagram/instagram-instagram/instagram" "arm64-v8a" "640dpi"
 	patch "instagram-arm64-v8a" "revanced"
 }
 5() {
