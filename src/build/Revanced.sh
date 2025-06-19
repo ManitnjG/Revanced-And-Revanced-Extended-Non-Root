@@ -21,9 +21,6 @@ req() {
   curl -L -o "$2" "$1"
 }
 
-# Fetch the actual data-url using pup (ensure 'pup' is installed)
-download_path=$(curl -sL "$page_url" | pup 'button#detail-download-button attr{data-url}')
-
 # Compose the real APK download URL
 apk_url="https://dw.uptodown.com/dwn/$download_path"
 
