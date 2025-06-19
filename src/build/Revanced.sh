@@ -15,9 +15,9 @@ revanced_dl(){
 	# Arm64-v8a
 	get_patches_key "instagram"
 	url="https://instagram.en.uptodown.com/android/download/1079737991" #Use uptodown because apkmirror ban tiktok in US lead github action can't download apk file
-	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"
-	ls	
+	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"	
  	req "$url" "instagram-arm64-v8a.apk"
+ 	 ls
 	patch "instagram-arm64-v8a" "revanced"
 }
 12() {
