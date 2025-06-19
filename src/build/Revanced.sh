@@ -18,7 +18,7 @@ revanced_dl(){
 	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"	
  	req "$url" "instagram-arm64-v8a.apk"
  	 ls
-	patch "instagram-arm64-v8a" "revanced"
+	patch "instagram-arm64-v8a" "ReVancedExperiments"
 }
 12() {
 	revanced_dl
@@ -28,7 +28,7 @@ revanced_dl(){
  	url="https://apkcombo.com/spotify/com.spotify.music/download/phone-9.0.56.106-apk"
 	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"
  	get_apkpure "com.spot"$j"fy.music" "spotjfy-arm64-v8a" "spot"$j"fy-music-and-podcasts-for-android/com.spot"$j"fy.music"
-	patch "spotjfy-arm64-v8a" "revanced"
+	patch "spotjfy-arm64-v8a" "revanced-extended" "inotia"
 }
 case "$1" in
     4)
