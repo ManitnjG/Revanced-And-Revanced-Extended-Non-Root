@@ -24,11 +24,10 @@ revanced_dl(){
 	revanced_dl
 	# Patch Spotjfy Arm64-v8a
 	get_patches_key "Spotjfy-revanced"
-	j="i"
  	url="https://apkcombo.com/spotify/com.spotify.music/download/phone-9.0.56.106-apk"
 	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"
- 	get_apkpure "com.spot"$j"fy.music" "spotjfy-arm64-v8a" "spot"$j"fy-music-and-podcasts-for-android/com.spot"$j"fy.music"
-	patch "spotjfy-arm64-v8a" "revanced-extended" "inotia"
+ 	ls
+	patch "spotify-arm64-v8a" "revanced-extended" "inotia"
 }
 case "$1" in
     4)
