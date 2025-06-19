@@ -18,7 +18,7 @@ revanced_dl(){
 	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"	
  	req "$url" "instagram-arm64-v8a.apk"
  	 ls
-	patch "instagram-arm64-v8a" "ReVancedExperiments"
+	patch "instagram-arm64-v8a" "ReVancedExperiments" "Aunali321"
 }
 12() {
 	revanced_dl
