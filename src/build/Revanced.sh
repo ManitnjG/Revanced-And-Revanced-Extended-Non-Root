@@ -4,6 +4,7 @@ source ./src/build/utils.sh
 # Download requirements
 revanced_dl(){
 	dl_gh "ReVancedExperiments" "Aunali321" "latest"
+ 	dl_gh "revanced-patches revanced-cli" "inotia00" "latest"
 }
 
 4() {
@@ -24,8 +25,9 @@ revanced_dl(){
 	# Patch Spotjfy Arm64-v8a
 	get_patches_key "Spotjfy-revanced"
 	j="i"
-	version="9.0.44.478" #https://github.com/ReVanced/revanced-patches/issues/4958#issuecomment-2883387940
-	get_apkpure "com.spot"$j"fy.music" "spotjfy-arm64-v8a" "spot"$j"fy-music-and-podcasts-for-android/com.spot"$j"fy.music"
+ 	url="https://apkcombo.com/spotify/com.spotify.music/download/phone-9.0.56.106-apk"
+	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"
+ 	get_apkpure "com.spot"$j"fy.music" "spotjfy-arm64-v8a" "spot"$j"fy-music-and-podcasts-for-android/com.spot"$j"fy.music"
 	patch "spotjfy-arm64-v8a" "revanced"
 }
 case "$1" in
