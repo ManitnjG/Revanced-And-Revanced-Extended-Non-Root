@@ -3,10 +3,10 @@
 source ./src/build/utils.sh
 # Download requirements
 revanced_dl(){
-	dl_gh "revanced-patches revanced-cli" "revanced" "latest"
+	dl_gh "ReVancedExperiments" "Aunali321" "latest"
 }
 
-1() {
+4() {
 	revanced_dl
 	# Patch Tiktok:
 	
@@ -19,7 +19,7 @@ revanced_dl(){
  	req "$url" "instagram-arm64-v8a.apk"
 	patch "instagram-arm64-v8a" "revanced"
 }
-2() {
+12() {
 	revanced_dl
 	# Patch Spotjfy Arm64-v8a
 	get_patches_key "Spotjfy-revanced"
@@ -29,11 +29,11 @@ revanced_dl(){
 	patch "spotjfy-arm64-v8a" "revanced"
 }
 case "$1" in
-    1)
-        1
+    4)
+        4
         ;;
-    2)
-        2
+    12)
+        12
         ;;
     
 esac
