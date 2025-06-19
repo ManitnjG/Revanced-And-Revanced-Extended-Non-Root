@@ -29,7 +29,7 @@ apk_url="https://dw.uptodown.com/dwn/$download_path"
 # Download the APK
 req "$apk_url" "instagram-arm64-v8a.apk"
 ls
-	patch "instagram-arm64-v8a" "ReVancedExperiments" "Aunali321"
+	patch "instagram-arm64-v8a" "revanced-experiments"
 }
 12() {
 	revanced_dl
