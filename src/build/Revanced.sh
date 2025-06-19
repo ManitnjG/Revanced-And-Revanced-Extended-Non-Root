@@ -17,7 +17,8 @@ revanced_dl(){
 	url="https://instagram.en.uptodown.com/android/download/1079737991" #Use uptodown because apkmirror ban tiktok in US lead github action can't download apk file
 	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"	
  	req "$url" "instagram-arm64-v8a.apk"
- 	 ls
+ 	cd downloads 
+   	ls
 	patch "instagram-arm64-v8a" "ReVancedExperiments" "Aunali321"
 }
 12() {
@@ -26,7 +27,8 @@ revanced_dl(){
 	get_patches_key "Spotjfy-revanced"
  	url="https://apkcombo.com/spotify/com.spotify.music/download/phone-9.0.56.106-apk"
 	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"
- 	ls
+ 	cd downloads
+  	ls
 	patch "spotify-arm64-v8a" "revanced-extended" "inotia"
 }
 case "$1" in
