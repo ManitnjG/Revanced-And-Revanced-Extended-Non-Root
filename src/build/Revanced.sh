@@ -19,7 +19,7 @@ revanced_dl(){
  	req "$url" "instagram-arm64-v8a.apk"
  	cd download
    	ls
-	patch "instagram-arm64-v8a" "ReVancedExperiments" "Aunali321"
+	patch "instagram*.apk" "ReVancedExperiments" "Aunali321"
 }
 12() {
 	revanced_dl
@@ -29,7 +29,7 @@ revanced_dl(){
 	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"
  	cd download
   	ls
-	patch "spotify-arm64-v8a" "revanced-extended" "inotia"
+	patch "Spotify*.apk" "revanced-extended" "inotia"
 }
 case "$1" in
     4)
