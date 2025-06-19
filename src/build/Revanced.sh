@@ -4,6 +4,7 @@ source ./src/build/utils.sh
 # Download requirements
 revanced_dl(){
 	dl_gh "ReVancedExperiments" "Aunali321" "latest"
+ 	dl_gh "revanced-cli" "revanced" "latest"
 }
 
 4() {
