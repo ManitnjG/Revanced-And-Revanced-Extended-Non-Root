@@ -17,9 +17,7 @@ revanced_dl(){
 	url="https://instagram.en.uptodown.com/android/download/1079737991" #Use uptodown because apkmirror ban tiktok in US lead github action can't download apk file
 	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"	
  	req "$url" "instagram-arm64-v8a.apk"
- 	cd download
-   	ls
-	patch "instagram*.apk" "ReVancedExperiments" "Aunali321"
+	patch "instagram-arm64-v8a.apk" "ReVancedExperiments" "Aunali321"
 }
 12() {
 	revanced_dl
