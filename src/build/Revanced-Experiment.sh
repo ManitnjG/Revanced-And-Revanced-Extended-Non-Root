@@ -7,8 +7,7 @@ source src/build/utils.sh
 
 dl_gh "revanced-patches" "revanced" "latest"
 dl_gh "revanced-cli" "revanced" "latest"
-dl_gh "revanced-patches" "anddea" "latest"
-dl_gh "revanced-cli" "inotia00" "latest"
+
 #################################################
 
 # Patch Telegram CH Play Version:
@@ -17,6 +16,9 @@ dl_gh "revanced-cli" "inotia00" "latest"
    	version="379.1.0.43.80"
 	get_apk "com.instagram.android" "instagram-arm64-v8a" "instagram-instagram" "instagram/instagram-instagram/instagram" "arm64-v8a" "nodpi"
 	patch "instagram-arm64-v8a" "revanced" "instagram"
+
+dl_gh "revanced-patches" "anddea" "latest"
+dl_gh "revanced-cli" "inotia00" "latest"
 
 get_patches_key "Spotjfy-anddea"
 j="i"
