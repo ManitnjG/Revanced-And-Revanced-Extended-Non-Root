@@ -6,8 +6,7 @@ source src/build/utils.sh
 
 
 dl_gh "revanced-patches" "revanced" "latest"
-
-
+dl_gh "revanced-cli" "revanced" "latest"
 
 #################################################
 
