@@ -4,9 +4,10 @@ source src/build/utils.sh
 
 #################################################
 
-# Download requirements
-dl_gh "ReVancedExperiments" "Aunali321" "latest"
-dl_gh "revanced-cli" "revanced" "latest"
+
+dl_gh "revanced-patches" "revanced" "latest"
+
+
 
 #################################################
 
