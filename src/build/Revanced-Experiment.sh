@@ -13,5 +13,5 @@ dl_gh "revanced-cli" "revanced" "latest"
 # Patch Telegram CH Play Version:
 # Patch Instagram:
 get_patches_key "instagram-revanced-experiments"
-get_apk "com.instagram.android" "instagram-arm64-v8a" "instagram/instagram-instagram" "instagram-378-0-0-52-68-release" "640dpi"
+get_apk "com.instagram.android" "instagram-arm64-v8a" "instagram/instagram-instagram" "instagram" "640dpi"
 patch "instagram-arm64-v8a" "revanced-experiments"
