@@ -13,20 +13,10 @@ revanced_dl(){
 	
 	# Patch Instagram:
 	# Arm64-v8a
+
 	get_patches_key "instagram"
-page_url="https://instagram.en.uptodown.com/android/download/1079737991"
-
-# Define 'req' function to download files
-req() {
-  curl -L -o "$2" "$1"
-}
-
-# Compose the real APK download URL
-apk_url="https://dw.uptodown.com/dwn/$download_path"
-
-# Download the APK
-req "$apk_url" "instagram-arm64-v8a.apk"
-	patch "instagram-arm64-v8a" "revanced-experiments"
+	get_apk "com.instagram.android" "instagram-arm64-v8a" "instagram-instagram" "instagram/instagram-instagram/instagram" "arm64-v8a" "nodpi"
+	patch "instagram-arm64-v8a" "revanced"
 }
 12() {
 	revanced_dl
