@@ -18,7 +18,6 @@ dl_gh "revanced-cli" "revanced" "latest"
 	patch "instagram-arm64-v8a" "revanced" "instagram"
 
 dl_gh "revanced-patches" "anddea" "latest"
-dl_gh "revanced-cli" "inotia00" "latest"
 
 get_patches_key "Spotjfy-anddea"
 j="i"
