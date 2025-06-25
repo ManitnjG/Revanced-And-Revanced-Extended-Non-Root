@@ -9,16 +9,8 @@ dl_gh "revanced-patches" "revanced" "latest"
 dl_gh "revanced-cli" "revanced" "latest"
 
 #################################################
-wget https://d-e03.winudf.com/b/XAPK/Y29tLmluc3RhZ3JhbS5hbmRyb2lkXzM3OTAwNDgwN19kODZhM2VhNg?_fn=SW5zdGFncmFtXzM4NS4wLjAuNDcuNzRfQVBLUHVyZS54YXBr&_p=Y29tLmluc3RhZ3JhbS5hbmRyb2lk&download_id=1535500132091765&is_hot=true&k=0f4f05f2bdf7b9bf7f24313ef6d5fa0f685d268c&uu=https%3A%2F%2Fd-08.winudf.com%2Fb%2FXAPK%2FY29tLmluc3RhZ3JhbS5hbmRyb2lkXzM3OTAwNDgwN19kODZhM2VhNg%3Fk%3Df3190c07ce16af0386862d1da95e2cb3685d268c
-git clone https://github.com/LuigiVampa92/xapk-to-apk.git
-cd xapk-to-apk
-chmod +x xapktoapk.py
-xapktoapk instagram.xapk
-# Patch Telegram CH Play Version:
-# Patch Instagram:
   	get_patches_key "instagram"
-   	version="379.1.0.43.80"
-	get_apk "com.instagram.android" "instagram-arm64-v8a" "instagram-instagram" "instagram/instagram-instagram/instagram" "arm64-v8a" "nodpi"
+   	wget https://apks.39b7cb94d40914bac590886981b0ed6e.r2.cloudflarestorage.com/com.instagram.android/386.0.0.19.84/379005606.7f8984c2beb5ae09aeac17b80d77173d3ed12ffe.apk?response-content-disposition=attachment%3B%20filename%3D%22Instagram_386.0.0.19.84_apkcombo.com.apk%22&response-content-type=application%2Fvnd.android.package-archive&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250625T105809Z&X-Amz-SignedHeaders=host&X-Amz-Expires=14400&X-Amz-Credential=3cb727b4cd4780c410b780ac7caa4da3%2F20250625%2Fauto%2Fs3%2Faws4_request&X-Amz-Signature=5bd5dad828af78cb3b3d5336c83253be82d608a76084f22dfe5486af5dd24b70
 	patch "instagram-arm64-v8a" "revanced" "instagram"
 
 dl_gh "revanced-patches" "anddea" "latest"
