@@ -10,7 +10,7 @@ dl_gh "revanced-cli" "revanced" "latest"
 
 #################################################
  get_patches_key "instagram"  # This should set or fetch patch details
-
+rm instagram-arm64-v8a.apk
 curl -L -o instagram-arm64-v8a.apk "https://apkcombo.com/r2?u=https%3A%2F%2Fapks.39b7cb94d40914bac590886981b0ed6e.r2.cloudflarestorage.com%2Fcom.instagram.android%2F387.0.0.0.61%2F379103159.538c187a90cb4972779ad204d6c679db01483eda.apk%3F..."
 
 if [ -f "instagram-arm64-v8a.apk" ]; then
