@@ -20,7 +20,7 @@ else
 fi
 
 ls -lh instagram-arm64-v8a.apk
-patch "Instagram-arm64-v8a" "revanced" "instagram"
+patch "instagram-arm64-v8a" "revanced" "instagram"
 dl_gh "revanced-patches" "anddea" "latest"
 
 get_patches_key "Spotjfy-anddea"
