@@ -19,7 +19,7 @@ else
   echo "Download failed"
 fi
 
-ls -lh instagram-arm64-v8a.apk
+ls 
 patch "instagram-arm64-v8a" "revanced" "instagram"
 dl_gh "revanced-patches" "anddea" "latest"
 
