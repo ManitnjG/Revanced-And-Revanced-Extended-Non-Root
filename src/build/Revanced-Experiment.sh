@@ -10,7 +10,7 @@ dl_gh "revanced-cli" "inotia00" "latest"
 
 # Patch YouTube:
 get_patches_key "youtube-rve-anddea"
-get_apk "com.google.android.youtube" "youtube-stable" "google-inc/youtube/youtube-20-33-38-release" "APK"
+get_apk "com.google.android.youtube" "youtube-stable" "youtube" "google-inc/youtube/youtube-20-33-38-release" "Bundle_extract"
 version="20.33.38"
 split_editor "youtube-stable" "youtube-stable"
 patch "youtube-stable" "anddea" "inotia"
