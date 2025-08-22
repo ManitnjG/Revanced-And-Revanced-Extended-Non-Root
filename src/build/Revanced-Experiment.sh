@@ -4,10 +4,7 @@ source src/build/utils.sh
 
 dl_gh "revanced-patches" "anddea" "latest"
 dl_gh "revanced-cli" "inotia00" "latest"
-wget https://dw.uptodown.net/dwn/ILnMtgdRo-P4xfNcHjQvrdMShhjMiLeh_e9YKZRB5KRWKn7B2HJZdfvvdLChjXW32H4i07iQYqCFcCX5EOBMzZti829oAj-WNcx0l5bAaTAWb9FaHozEv8gpQUn5qr94/KDXNxt_THTqizRwp1mLM6BCk7Vr8SA3GupVmm3CUMml_u-iFDBDgHr1lMDkcZ8gZOwsm5JCCxR7Tb-l7rw8sqcArhanHUweTpqUAzelM5fsaKSVVTMWYMwxtZzi8P9DZ/-DC31a4uAKbcjxTvMNO1_2W1PyPN44S-SfgBGUPH-uhSbDuMOQOsW-C8rCzzjf2Q1JnGmxjum1oVwYdtVVWn1g==/youtube-20-32-43.apk
-ls
-mv youtube-20-32-43.apk youtube-stable.apk
-ls
+get_apk "com.google.android.youtube" "youtube-stable" "youtube" "google-inc/youtube/youtube" "Version=20.33.38" "Bundle_extract" 
 get_patches_key "youtube-rve-anddea"
 patch "youtube-stable" "anddea" "inotia"
 
