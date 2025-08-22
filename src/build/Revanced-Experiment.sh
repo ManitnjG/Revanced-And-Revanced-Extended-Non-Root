@@ -4,7 +4,8 @@ source src/build/utils.sh
 
 dl_gh "revanced-patches" "anddea" "latest"
 dl_gh "revanced-cli" "inotia00" "latest"
-get_apk "com.google.android.youtube" "youtube-stable" "youtube" "google-inc/youtube/youtube" "Version=20.33.38" "Bundle_extract" 
+version"20.33.38"
+get_apkpure "com.google.android.youtube" "youtube-stable" "youtube/com.google.android.youtube"
 get_patches_key "youtube-rve-anddea"
 patch "youtube-stable" "anddea" "inotia"
 
