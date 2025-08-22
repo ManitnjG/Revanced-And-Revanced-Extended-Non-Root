@@ -2,14 +2,10 @@
 # ReVanced Experiments build 
 source src/build/utils.sh
 
-#################################################
-
-# Download requirements
 dl_gh "revanced-patches" "anddea" "latest"
 dl_gh "revanced-cli" "inotia00" "latest"
 
-# Patch YouTube:
-dl_apk() 
+url="https://www.apkmirror.com/apk/google-inc/youtube/youtube-20-33-38-release/"
 get_patches_key "youtube-rve-anddea"
 
 split_editor "youtube-stable" "youtube-stable"
